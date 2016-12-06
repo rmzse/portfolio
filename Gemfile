@@ -15,5 +15,4 @@ group :development, :test do
   gem 'pry'
   gem 'launchy'
   gem 'rspec'
-  gem 'html2haml'
 end
