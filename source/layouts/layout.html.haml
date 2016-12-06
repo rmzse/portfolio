@@ -1,16 +1,19 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}/
-    / Use title if it's in the page YAML frontmatter
-    %title= current_page.data.title || "Middleman"
-    %link{:href => "//fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}/
+    %meta{content:  "text/html; charset=UTF-8", "http-equiv":  "Content-Type"}/
+    %meta{content:  "IE=edge", "http-equiv":  "X-UA-Compatible"}/
+    %meta{charset:  "utf-8"}/
+    %meta{content:  "ie=edge", "http-equiv":  "x-ua-compatible"}/
+    -# %meta{content:  "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", name:  "viewport"}/
+    %meta{content:  "width=device-width, initial-scale=1.0", name:  "viewport"}/
+    = javascript_include_tag 'https://code.jquery.com/jquery-2.1.4.js'
+    = stylesheet_link_tag 'https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css'
     = stylesheet_link_tag :site
-    = javascript_include_tag :all
-  %body{:class => page_classes}
+    %title= current_page.data.title || "rodrigo mu&ntilde;oz portfolio"
+  %body{class:  page_classes}
     = partial 'partials/header'
     = yield
     = partial 'partials/footer'
+    = javascript_include_tag 'https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js'
+    = javascript_include_tag :all

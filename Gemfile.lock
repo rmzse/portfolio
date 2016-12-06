@@ -45,11 +45,6 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.4.6)
-    html2haml (2.0.0)
-      erubis (~> 2.7.0)
-      haml (~> 4.0.0)
-      nokogiri (~> 1.6.0)
-      ruby_parser (~> 3.5)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     json (2.0.2)
@@ -151,11 +146,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
-    ruby_parser (3.8.2)
-      sexp_processor (~> 4.1)
     sass (3.4.22)
     servolux (0.12.0)
-    sexp_processor (4.7.0)
     slop (3.6.0)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
@@ -177,7 +169,6 @@ DEPENDENCIES
   capybara
   capybara-webkit
   haml
-  html2haml
   launchy
   middleman (>= 4.0.0)
   middleman-deploy (~> 2.0.0.pre.alpha)
