@@ -1,20 +1,6 @@
-.projects{width: '300px', height: '300px'}
-  .column{style: 'border: 1px solid blue;'}
-    - data.projects.each do |project|
-      .project{id: "haml_loud#{project[:id]}"}
-        %h4= project[:name]
-        %h4= project[:description]
-      -# %div{id: "haml_loud#{project[:id]}", class: 'project'}
-  .helloiam
-    HELLO I AM
-    .ebba
-      Ebba
-
-
-
-  -# .welcome
-  -#   .logo
-  -#     = image_tag 'middleman-logo.svg'
-  -#   %h1 Rockin' Robin
-  -#   %p.doc
-  -#     = link_to 'Read Documentation Online', 'https://middlemanapp.com', target: '_blank'
+.row
+  .column.end
+  - data.projects.each do |project|
+    .item{id: "haml_loud#{project[:id]}"}
+      %h4= project[:name]
+      %h4= project[:description]

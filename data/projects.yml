@@ -1,7 +1,27 @@
-- project-id: 1
+- id: 1
   name: My first website
   description: Simple site from Prep course
 
-- project-id: 2
+- id: 2
   name: FizzBuzz
-  description: My first Test driven ruby project
+  description: My first ruby experience
+
+- id: 3
+  name: ATM Challenge
+  description: My first Test driven ruby project (TDD)
+
+- id: 4
+  name: Library Challenge - in progress
+  description: My first weekend challenge in ruby (TDD)
+
+- id: 5
+  name: BMI Calculator
+  description: My first real test driven encounter with JS (TDD)
+
+- id: 6
+  name: Slowfood
+  description: My first BDD group challenge using the Sinatra MVC framework
+
+- id: 7
+  name: This Portfolio
+  description: The site you are on right now!
