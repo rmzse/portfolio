@@ -1,8 +1,9 @@
-.projects
+.projects{width: '300px', height: '300px'}
   - data.projects.each do |project|
-    %div{id: "haml_loud#{project[:id]}", class: 'project'}
+    .project{id: "haml_loud#{project[:id]}"}
       %h4= project[:name]
       %h4= project[:description]
+    -# %div{id: "haml_loud#{project[:id]}", class: 'project'}
 
 
 

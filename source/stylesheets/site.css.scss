@@ -112,3 +112,22 @@ body {
 
 .js-drilldown-back::before {
   border-color: transparent #fff transparent transparent; }
+
+/// grid
+
+.projects {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+}
+
+.project {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin: 3px;
+}
