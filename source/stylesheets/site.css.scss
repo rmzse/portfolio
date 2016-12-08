@@ -127,21 +127,22 @@ body {
 }
 
 .item {
-  background-color: white;
+  // background-color: white;
   // width: 15em;
   // height: 15em;
   // width: 100%;
   // height: auto;
-  margin: 0;
+  // margin: 0;
   border: 1px solid lightgray;
   padding: 1em;
+  background-image: url('http://placehold.it/400x400');
   // display: inline-block;
-
-  width:24%;
-  height:24vw;
+  // height:100%;
+  // width: 100%;
   margin:0.1%;
   background:gold;
-  float:left;}
+  // float:left;
+}
 
 .name { font-size: 1.5em; }
 .description { font-size: .4em; }
@@ -150,7 +151,12 @@ body {
   text-align: right;
   font-family: .5em; }
 
-
+.holder {
+  width: 24vw;
+  height: 24vw;
+  border: 1px solid red;
+  // background-image: url('http://placehold.it/400x400');
+}
 
 
 
