@@ -1,6 +1,6 @@
 .row
-  .column.end
+  %ul.small-block-grid-2.medium-block-grid-3.large-block-grid-4
   - data.projects.each do |project|
-    .item{id: "haml_loud#{project[:id]}"}
-      %h4= project[:name]
-      %h4= project[:description]
+    %li.item{id: "haml_loud#{project[:id]}"}
+      .name= project[:name]
+      .description= project[:description]

@@ -141,16 +141,10 @@ body {
   height:24vw;
   margin:0.1%;
   background:gold;
-  float:left;
+  float:left;}
 
-  .name {
-    font-size: 1em;
-
-    .description { font-size: 1em; }
-  }
-
-
-}
+.name { font-size: 1.5em; }
+.description { font-size: .4em; }
 
 .footerpraize {
   text-align: right;
