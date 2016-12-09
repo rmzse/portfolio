@@ -1,27 +1,34 @@
 - id: 1
   name: My first website
   description: Simple site from Prep course
+  lang: html
 
 - id: 2
   name: FizzBuzz
   description: My first ruby experience
+  lang: ruby
 
 - id: 3
   name: ATM Challenge
   description: My first Test driven ruby project (TDD)
+  lang: ruby
 
 - id: 4
-  name: Library Challenge - in progress
+  name: Library
   description: My first weekend challenge in ruby (TDD)
+  lang: ruby
 
 - id: 5
   name: BMI Calculator
   description: My first real test driven encounter with JS (TDD)
+  lang: js
 
 - id: 6
   name: Slowfood
   description: My first BDD group challenge using the Sinatra MVC framework
+  lang: ruby
 
 - id: 7
   name: This Portfolio
   description: The site you are on right now!
+  lang: scss

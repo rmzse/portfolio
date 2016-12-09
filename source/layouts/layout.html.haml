@@ -8,12 +8,15 @@
     -# %meta{content:  "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", name:  "viewport"}/
     %meta{content:  "width=device-width, initial-scale=1.0", name:  "viewport"}/
     = javascript_include_tag 'https://code.jquery.com/jquery-2.1.4.js'
-    = stylesheet_link_tag 'https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css'
     = stylesheet_link_tag :site
+    = stylesheet_link_tag 'foundation.min.css'
     %title= current_page.data.title || "rodrigo mu&ntilde;oz portfolio"
   %body{class:  page_classes}
     = partial 'partials/header'
     = yield
     = partial 'partials/footer'
-    = javascript_include_tag 'https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js'
+    = javascript_include_tag 'javascripts/vendor/jquery.javascripts'
+    = javascript_include_tag 'javascripts/vendor/what-input.javascripts'
+    = javascript_include_tag 'javascripts/vendor/foundation.javascripts'
     = javascript_include_tag :all
+    -# = javascript_include_tag 'https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js'

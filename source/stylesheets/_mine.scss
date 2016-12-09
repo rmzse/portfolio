@@ -1,0 +1,61 @@
+/// grid
+
+.item-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 0;
+}
+
+.item {
+  // background-color: white;
+  // width: 15em;
+  // height: 15em;
+  // width: 100%;
+  // height: auto;
+  // margin: 0;
+  border: 1px solid lightgray;
+  padding: 1em;
+  background-image: url('http://placehold.it/400x400');
+  // display: inline-block;
+  // height:100%;
+  // width: 100%;
+  margin:0.1%;
+  background:gold;
+  // float:left;
+}
+
+.name {
+  font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-weight: bold;
+  font-size: 2.5vmin;
+}
+
+.description {
+  font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 2vmin;
+}
+
+
+.footerpraize {
+  text-align: right;
+  font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 2vmin;
+  color: #999;
+  margin-top: 3vmax;
+}
+
+
+.holder {
+  width: 24vw;
+  height: 24vw;
+  border: .5em solid black;
+  background:white;
+  padding: 0.6vmin 0.6vmin;
+  margin: 0.2vmin 0.2vmin;
+  // background-image: url('http://placehold.it/400x400');
+}
