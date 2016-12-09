@@ -1,22 +1,32 @@
 %header
-  .title-bar{"data-hide-for": "medium", "data-responsive-toggle": "main-menu"}
-    %button.menu-icon{"data-toggle": "", type: "button"}
-    .title-bar-title Menu
-  #main-menu.top-bar
-    .top-bar-left
-      %ul.dropdown.menu{"data-dropdown-menu": ""}
-        %li.menu-text rodrigo mu&ntilde;oz
-    .top-bar-right
-      %ul.menu{"data-responsive-menu": "drilldown medium-dropdown"}
-        %li
-          %a{href: "#"}
-            %strong about
-        %li
-          %a{href: "#"}
-            %strong contact
-        %li
-          %a{href: "#"}
-            %strong thoughts
+.fixed
+  .top-bar{"data-topbar":'', role: 'navigation' }
+    %ul.title-area
+      %li.name rodrigo mu&ntilde;oz
+      %li.toggle-tobpbar.menu-item menu
+    %section.top-bar-section
+      %ul.right
+        %li.active about
+        %li.active about
+        %li.active about
+  -# .title-bar{"data-hide-for": "medium", "data-responsive-toggle": "main-menu"}
+  -#   %button.menu-icon{"data-toggle": "", type: "button"}
+  -#   .title-bar-title Menu
+  -# #main-menu.top-bar
+  -#   .top-bar-left
+  -#     %ul.dropdown.menu{"data-dropdown-menu": ""}
+  -#       %li.menu-text rodrigo mu&ntilde;oz
+  -#   .top-bar-right
+  -#     %ul.menu{"data-responsive-menu": "drilldown medium-dropdown"}
+  -#       %li
+  -#         %a{href: "#"}
+  -#           %strong about
+  -#       %li
+  -#         %a{href: "#"}
+  -#           %strong contact
+  -#       %li
+  -#         %a{href: "#"}
+  -#           %strong thoughts
         -# %li
         -#   %a{href: "https://se.linkedin.com/in/irodrigomunoz", target: '_blank'}
         -#     = image_tag 'linkedin-logo-transp.png', width: '19px'

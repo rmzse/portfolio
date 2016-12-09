@@ -1,7 +1,13 @@
 .row.align-stretch.align-center.text-center.expanded.small-collapse.medium-collapse.large-collapse
   - data.projects.each do |project|
     .columns.align-stretch.small-6.small-collapse.medium-3.medium-collapse.large-4.large-collapse.end
-      -# .columns.small-6.medium-expand.large-expand.end
-      .holder.text-center{style: "background-image: url(''); background-size: cover;"}
-        .name= project[:name]
-        .description= project[:description]
+      .holder.text-center
+        .row{style: 'border: 1px solid blue;'}
+          .columns
+            .name= project[:name]
+            .description= project[:description]
+        .row{style: 'border: 1px solid yellow;'}
+          .columns.linkto.small-6.medium-6.large-6{style: 'border: 1px solid green;'}
+            link
+          .columns.octocat.small-6.medium-6.large-6{style: 'border: 1px solid red;'}
+            gh

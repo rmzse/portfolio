@@ -1,32 +1,13 @@
-/// grid
-
-.item-wrapper {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    padding: 0;
-}
-
-.item {
-  // background-color: white;
-  // width: 15em;
-  // height: 15em;
-  // width: 100%;
-  // height: auto;
-  // margin: 0;
-  border: 1px solid lightgray;
-  padding: 1em;
-  background-image: url('http://placehold.it/400x400');
-  // display: inline-block;
-  // height:100%;
-  // width: 100%;
-  margin:0.1%;
-  background:gold;
-  // float:left;
+.holder {
+  width: 24vw;
+  height: 24vw;
+  border: 1.2vmax solid black;
+  background:white;
+  padding: 1.2vmin 1.5vmax;
+  margin: 0.65vmin 0.2vmin;
+  align-content: stretch;
+  background-image: url('');
+  background-size: cover;
 }
 
 .name {
@@ -42,6 +23,13 @@
   margin-top:0.25%;
 }
 
+.linkto {
+
+}
+
+.gh {
+
+}
 
 .footerpraize {
   text-align: right;
@@ -49,16 +37,4 @@
   font-size: 2vmin;
   color: #999;
   margin-top: 3vmax;
-}
-
-
-.holder {
-  width: 24vw;
-  height: 24vw;
-  border: 1.2vmax solid black;
-  background:white;
-  padding: 1.2vmin 0.6vmin;
-  margin: 0.65vmin 0.2vmin;
-  align-content: stretch;
-  // background-image: url('http://placehold.it/400x400');
 }
