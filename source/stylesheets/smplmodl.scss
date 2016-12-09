@@ -1,0 +1,98 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 4vmax;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #888;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/****** style the modal ******/
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 6px;
+    background-color: #fff;
+    color: #333;
+    font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 5vmin;
+}
+
+.abouttitle { margin-top:1.4vmax; }
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #fff;
+    color: #333;
+    font-size: 2vmin;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    color: #333;
+    margin: auto;
+    padding: 0;
+    border: 1.2vmax solid black;
+    background:white;
+    padding: 0.5vmin 1.5vmax;
+    margin-top: 17vmin;
+    width: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+    font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 2.5vmin;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}

@@ -24,10 +24,6 @@
   background-size: cover;
 }
 
-.unfinished {
-  color: #666;
-  border-color: #666;
-}
 
 .holder-body {
   max-height: 100%;
@@ -44,6 +40,14 @@
   font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-size: 2vmin;
   margin-top:0.25%;
+}
+
+.unfinished {
+  font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 2vmin;
+  margin-top:0.25%;
+  color: #666;
+  border-color: #666;
 }
 
 li, a {

@@ -34,7 +34,7 @@
   gh: 'https://github.com/rmzse/slow_food_sinatra_nov'
   finished: true
 
-- name: This Portfolio
+- name: Portfolio Site
   description: The site you are on right now!
   lang: scss
   lnk: 'https://rmzse.github.io/portfolio/'
