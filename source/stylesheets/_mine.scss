@@ -32,12 +32,14 @@
 .name {
   font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-weight: bold;
-  font-size: 2.5vmin;
+  font-size: 3.5vmin;
+  margin-top:0.5vmax;
 }
 
 .description {
   font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-size: 2vmin;
+  margin-top:0.25%;
 }
 
 
@@ -53,9 +55,10 @@
 .holder {
   width: 24vw;
   height: 24vw;
-  border: .5em solid black;
+  border: 1.2vmax solid black;
   background:white;
-  padding: 0.6vmin 0.6vmin;
-  margin: 0.2vmin 0.2vmin;
+  padding: 1.2vmin 0.6vmin;
+  margin: 0.65vmin 0.2vmin;
+  align-content: stretch;
   // background-image: url('http://placehold.it/400x400');
 }

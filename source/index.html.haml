@@ -1,7 +1,7 @@
-.row.align-stretch.align-center.text-center
+.row.align-stretch.align-center.text-center.expanded.small-collapse.medium-collapse.large-collapse
   - data.projects.each do |project|
-    .columns.align-stretch.small-6.medium-3.large-4.end
+    .columns.align-stretch.small-6.small-collapse.medium-3.medium-collapse.large-4.large-collapse.end
       -# .columns.small-6.medium-expand.large-expand.end
-      .holder.text-center{style: "background-image: url('https://cdn.marilynekoka.me/images/thumbnails/trace1.jpg'); background-size: cover;"}
-        %p.name= project[:name]
-        %p.description= project[:description]
+      .holder.text-center{style: "background-image: url(''); background-size: cover;"}
+        .name= project[:name]
+        .description= project[:description]
