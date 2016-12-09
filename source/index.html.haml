@@ -1,13 +1,27 @@
 .row.align-stretch.align-center.text-center.expanded.small-collapse.medium-collapse.large-collapse
   - data.projects.each do |project|
     .columns.align-stretch.small-6.small-collapse.medium-3.medium-collapse.large-4.large-collapse.end
-      .holder.text-center
-        .row{style: 'border: 1px solid blue;'}
-          .columns
-            .name= project[:name]
-            .description= project[:description]
-        .row{style: 'border: 1px solid yellow;'}
-          .columns.linkto.small-6.medium-6.large-6{style: 'border: 1px solid green;'}
-            link
-          .columns.octocat.small-6.medium-6.large-6{style: 'border: 1px solid red;'}
-            gh
+      .holder.text-center{class: [!project.finished? && "unfinished"] }
+        .row.align-stretch.align-center.text-center
+          .row
+            .columns
+              .name= project[:name]
+              .description= project[:description]
+        .row
+          .columns.holder-body
+            - if !project.finished?
+              = '(unfinished)'
+        .row.align-justify.linktogh
+          .columns.linkto.small-2.medium-2.large-2
+            .linkto.text-left
+              - if project[:lnk] == 'lnk'
+                = ''
+              - else
+                = link_to 'lnk', project[:lnk], target: '_blank'
+          .columns.octocat.small-2.medium-2.large-2
+            .gh.text-right
+              - if project[:gh] == 'gh'
+                = ''
+              - else
+                = link_to 'gh', project[:gh], target: '_blank'
+                -# %a{href: "#{project[:gh]}", target: '_blank'} gh

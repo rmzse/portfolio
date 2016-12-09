@@ -1,39 +1,65 @@
+@font-face {
+  /* Signika */
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Signika.eot'); /* IE9 Compat Modes */
+  src: local('Great Vibes'), local('GreatVibes-Regular'),
+       url('../fonts/Signika.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Signika.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Signika.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Signika.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Signika.svg#GreatVibes') format('svg'); /* Legacy iOS */
+}
+
 .holder {
   width: 24vw;
   height: 24vw;
   border: 1.2vmax solid black;
   background:white;
-  padding: 1.2vmin 1.5vmax;
+  padding: 0.5vmin 1.5vmax;
   margin: 0.65vmin 0.2vmin;
   align-content: stretch;
   background-image: url('');
   background-size: cover;
 }
 
+.unfinished {
+  color: #666;
+  border-color: #666;
+}
+
+.holder-body {
+  max-height: 100%;
+}
+
 .name {
-  font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-weight: bold;
   font-size: 3.5vmin;
   margin-top:0.5vmax;
 }
 
 .description {
-  font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-size: 2vmin;
   margin-top:0.25%;
 }
 
-.linkto {
-
+li, a {
+  font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
 }
 
-.gh {
+.linktogh {  margin-top: 1vmin; }
 
+.linkto .gh {
+  font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-size: 2vmin;
 }
 
 .footerpraize {
   text-align: right;
-  font-family: Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-size: 2vmin;
   color: #999;
   margin-top: 3vmax;

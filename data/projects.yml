@@ -1,48 +1,42 @@
-- id: 1
-  name: My first website
-  description: Simple site from Prep course
-  lang: html
-  lnk:
-  gh:
-
-- id: 2
-  name: FizzBuzz
+- name: FizzBuzz
   description: My first ruby experience
   lang: ruby
-  lnk:
-  gh:
+  lnk: lnk
+  gh: 'https://github.com/rmzse/2_fizz_buzz_js'
+  finished: true
 
-- id: 3
-  name: ATM Challenge
+
+- name: ATM Challenge
   description: My first Test driven ruby project (TDD)
   lang: ruby
-  lnk:
-  gh:
+  lnk: lnk
+  gh: 'https://github.com/rmzse/1_atm'
+  finished: true
 
-- id: 4
-  name: Library
-  description: My first weekend challenge in ruby (TDD)
+- name: Library
+  description: First weekend challenge in ruby (TDD)
   lang: ruby
-  lnk:
-  gh:
+  lnk: lnk
+  gh: 'https://github.com/rmzse/1_library-challenge'
+  finished: false
 
-- id: 5
-  name: BMI Calculator
+- name: BMI Calculator
   description: My first real test driven encounter with JS (TDD)
   lang: js
-  lnk:
-  gh:
+  lnk: rmzse.github.io/2_bmi
+  gh: 'https://github.com/rmzse/2_bmi'
+  finished: true
 
-- id: 6
-  name: Slowfood
-  description: My first BDD group challenge using the Sinatra MVC framework
+- name: Slowfood
+  description: First BDD group challenge with Sinatra MVC framework
   lang: ruby
-  lnk:
-  gh:
+  lnk: lnk
+  gh: 'https://github.com/rmzse/slow_food_sinatra_nov'
+  finished: true
 
-- id: 7
-  name: This Portfolio
+- name: This Portfolio
   description: The site you are on right now!
   lang: scss
-  lnk:
-  gh:
+  lnk: 'https://rmzse.github.io/portfolio/'
+  gh: 'https://github.com/rmzse/portfolio'
+  finished: false

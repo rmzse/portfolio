@@ -33,4 +33,19 @@ describe 'index', type: :feature do
     end
   end
 
+  it 'indicates unfinished projects with a gray square border' do
+    # create a subject-object?
+    unf = project.finished
+
+    expect(page).to have_selector 'holder'
+    within 'holder-body' do
+      expect(page).to have_css 'lightgray'
+    end
+
+    expect(page).to have_selector 'holder-body'
+    within 'holder-body' do
+      expect(page).to have_content '(unfinished)'
+    end
+  end
+
 end
