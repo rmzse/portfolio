@@ -16,11 +16,11 @@
 
         .row
           .columns.small-10.small-offset-1.medium-10.medium-offset-1.large-10.large-offset-1.end
-            .row.align-justify.link-n-gh{style: "border: 1px solid green"}
+            .row.align-justify.link-n-gh{style: "border: 1px solid white"}
               -# - if project[:lnk] != 'lnk'
               -#   = %a{href: "#{project[:gh]}", target: '_blank'}
               -#     .columns.small-2.medium-2.large-2.link{style: "border: 1px solid red"}
-              .columns.small-2.medium-2.large-2{style: "border: 1px solid red"}
+              .columns.small-2.medium-2.large-2{style: "border: 1px solid white"}
                 -# .columns.small-2.medium-2.large-2{class: [if project[:lnk] != 'lnk' && "link"] style: "border: 1px solid red"}
                 - if project[:lnk] == 'lnk'
                   = ''
@@ -37,7 +37,7 @@
                   -# - else
                   -#   - link_to project[:lnk], target: '_blank' do
                   -#     = image_tag 'link-icon-black.gif'
-              .columns.small-2.medium-2.large-2.end.gh{style: "border: 1px solid red"}
+              .columns.small-2.medium-2.large-2.end.gh{style: "border: 1px solid white"}
                 - if project[:gh] == 'gh'
                   = ''
                 - else
