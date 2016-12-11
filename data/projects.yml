@@ -23,7 +23,7 @@
 - name: BMI Calculator
   description: My first real test driven encounter with JS (TDD)
   lang: js
-  lnk: rmzse.github.io/2_bmi
+  lnk: 'https://rmzse.github.io/2_bmi'
   gh: 'https://github.com/rmzse/2_bmi'
   finished: true
 

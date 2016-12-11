@@ -17,16 +17,24 @@
   height: 24vw;
   border: 1.2vmax solid black;
   background:white;
-  padding: 0.5vmin 1.5vmax;
+  padding: 0.5vmin 2.5vmax;
   margin: 0.65vmin 0.2vmin;
   align-content: stretch;
   background-image: url('');
   background-size: cover;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 500px;
+  max-height: 500px;
+  flex-basis: auto; /* default value */
+  flex-grow: 1;
 }
 
 
 .holder-body {
   max-height: 100%;
+
+  padding: 1vmin 0;
 }
 
 .name {
@@ -44,8 +52,6 @@
 
 .unfinished {
   font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-  font-size: 2vmin;
-  margin-top:0.25%;
   color: #666;
   border-color: #666;
 }
@@ -54,11 +60,21 @@ li, a {
   font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
 }
 
-.linktogh {  margin-top: 1vmin; }
-
-.linkto .gh {
+.link-n-gh {
+  margin-top: 1vmin;
   font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-size: 2vmin;
+}
+
+img .link .gh {    // center content (the img) inside a foundation column
+  display: block;
+  margin: 0 auto;
+}
+
+.link {
+  // padding-right: 3em;
+  // -webkit-flex-direction: column-reverse; /* Safari */
+  // flex-direction:         column-reverse;
 }
 
 .footerpraize {

@@ -1,7 +1,8 @@
 .row.align-stretch.align-center.text-center.expanded.small-collapse.medium-collapse.large-collapse
   -# %button.md-trigger{"data-modal" => "modal-1"} Fade in & Scale
   - data.projects.each do |project|
-    .columns.align-stretch.small-6.small-collapse.medium-3.medium-collapse.large-4.large-collapse.end
+    .columns.align-center.small-12.small-collapse.medium-3.medium-collapse.large-4.large-collapse.end
+      -# .columns.align-stretch.small-6.small-collapse.medium-3.medium-collapse.large-4.large-collapse.end
       .holder.text-center{class: [!project.finished? && "unfinished"] }
         .row.align-stretch.align-center.text-center
           .row
@@ -12,31 +13,32 @@
           .columns.holder-body
             - if !project.finished?
               = '(unfinished)'
-        .row.align-justify.linktogh
-          .columns.linkto.small-2.medium-2.large-2
-            .linkto.text-left
-              - if project[:lnk] == 'lnk'
-                = ''
-              - else
-                = link_to 'lnk', project[:lnk], target: '_blank'
 
-                -# //these two lines trow a WEIRD err!!
-                -# - link_to project[:lnk], target: '_blank' do
-                -#  = image_tag 'link-icon-black.gif'
+        .row
+          .columns.small-10.small-offset-1.medium-10.medium-offset-1.large-10.large-offset-1.end
+            .row.align-justify.link-n-gh{style: "border: 1px solid green"}
+              .columns.small-2.medium-2.large-2.link{style: "border: 1px solid red"}
+                - if project[:lnk] == 'lnk'
+                  = 'lnk'
+                - else
+                  = link_to 'lnk', project[:lnk], target: '_blank'
 
-                -# - if !project.finished?
-                -#   - link_to project[:lnk], target: '_blank' do
-                -#     = image_tag 'link-icon-gray.gif'
-                -# - else
-                -#   - link_to project[:lnk], target: '_blank' do
-                -#     = image_tag 'link-icon-black.gif'
-          .columns.octocat.small-2.medium-2.large-2
-            .gh.text-right
-              - if project[:gh] == 'gh'
-                = ''
-              - else
-                = link_to 'gh', project[:gh], target: '_blank'
-                -# %a{href: "#{project[:gh]}", target: '_blank'} gh
+                  -# //these two lines trow a WEIRD err!!
+                  -# - link_to project[:lnk], target: '_blank' do
+                  -#  = image_tag 'link-icon-black.gif'
+
+                  -# - if !project.finished?
+                  -#   - link_to project[:lnk], target: '_blank' do
+                  -#     = image_tag 'link-icon-gray.gif'
+                  -# - else
+                  -#   - link_to project[:lnk], target: '_blank' do
+                  -#     = image_tag 'link-icon-black.gif'
+              .columns.small-2.medium-2.large-2.end.gh{style: "border: 1px solid red"}
+                - if project[:gh] == 'gh'
+                  = ''
+                - else
+                  = link_to 'gh', project[:gh], target: '_blank'
+                  -# %a{href: "#{project[:gh]}", target: '_blank'} gh
 
 
 #myModal.modal
@@ -51,36 +53,3 @@
       %p Please don't hesisate to get in touch for lunch or other social acitvity to know more and share ideas, hit the contact link on top right to find my contact info.
     .modal-footer.text-right
       %p In code we will trust.
-
-
-
-
-  -# = partial 'modal_js_call'
-  -# = javascript_include_tag 'javascripts/modal/classie.js'
-  -# = javascript_include_tag 'javascripts/modal/modalEffects.js'
-  -# / for the blur effect
-  -# :javascript
-  -#   // this is important for IEs
-  -#   var polyfilter_scriptpath = '/js/';
-  -# = javascript_include_tag 'javascripts/modal/cssParser.js'
-  -# = javascript_include_tag 'javascripts/modal/css-filters-polyfill.js'
-  -# = partial 'modal'
-  -# #modal-1.md-modal.md-effect-1
-  -#   .md-content
-  -#     %h3 Modal Dialog
-  -#     %div
-  -#       %p This is a modal window. You can do the following things with it:
-  -#       %ul
-  -#         %li
-  -#           %strong Read:
-  -#           modal windows will probably tell you something important so don't forget to read what they say.
-  -#         %li
-  -#           %strong Look:
-  -#           a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.
-  -#         %li
-  -#           %strong Close:
-  -#           click on the button below to close the modal.
-  -#       %button.md-close Close me!
-  -# / the overlay element
-  -# .md-overlay
-  -# %br{type:"_moz"}/
