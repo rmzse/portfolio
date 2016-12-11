@@ -72,9 +72,10 @@ img .link .gh {    // center content (the img) inside a foundation column
 }
 
 .link {
-  // padding-right: 3em;
-  // -webkit-flex-direction: column-reverse; /* Safari */
-  // flex-direction:         column-reverse;
+  background-image: url('../images/link-icon-black.gif');
+  background-size: cover;
+  flex-basis: auto; /* default value */
+  flex-grow: 1;
 }
 
 .footerpraize {
