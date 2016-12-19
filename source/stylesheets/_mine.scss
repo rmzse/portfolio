@@ -78,10 +78,11 @@ img .link .gh {    // center content (the img) inside a foundation column
   flex-grow: 1;
 }
 
-.footerpraize {
+.footerpraize, a.footerpraize {
   text-align: right;
   font-family: Signika,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  text-decoration: none;
   font-size: 2vmin;
   color: #999;
-  margin-top: 3vmax;
+  margin-top: 2vmax;
 }
