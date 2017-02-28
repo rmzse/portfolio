@@ -13,9 +13,9 @@ in order to deploy to github pages. See more at [https://github.com/middleman-co
 
 To deploy to surge cd into the root folder and type
 ```surge```
-into the terminal and log in to surge with your credentials. If you don't have signed up to Surge yet you will get the opportunity to do so at this step.
+into the terminal and log in to surge with your credentials. If you don't have signed up to Surge yet you will get the opportunity to do so at this step. Press ENTER to move on.
 To redeploy do
-```surge --<your deployed to domain>```
+```surge --domain <your deployed to domain without 'http://'>```
 or use a CNAME file. See more at [https://www.youtube.com/watch?time_continue=74&v=-EjdMvYPSVU]
 
 # TO-DO
