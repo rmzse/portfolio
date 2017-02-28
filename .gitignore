@@ -16,3 +16,9 @@
 
 # Ignore .DS_store file
 .DS_Store
+   
+# Ignored user files below
+.DS_Store
+.ideas/
+.idea
+.idea*
