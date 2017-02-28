@@ -2,7 +2,7 @@
 This is my first portfolio site where I can show some of the work I have done. Currently it only contains work from the Craftacademy bootcamp. Come back for future updates.
 
 # Building and deploying
-This static site is created with Middleman framework for static websites. You need to have the Middleman gem installed to create and run the site using the Middleman framework. [Check installation instructions](https://middlemanapp.com/basics/install/)
+This static site is created with Middleman framework for static websites. You need to have the Middleman gem installed to create and run the site using the Middleman framework. You will need to have Xcode CLI installed. [Check installation instructions](https://middlemanapp.com/basics/install/)
 
 In order to make a simple deploy to Github pages you need the [middleman-deploy gem found at](https://github.com/middleman-contrib/middleman-deploy)
 
