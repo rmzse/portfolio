@@ -4,6 +4,8 @@ This is my first portfolio site where I can show some of the work I have done. C
 # Building and deploying
 This static site is created with Middleman framework for static websites. You need to have the Middleman gem installed to create and run the site using the Middleman framework. You will need to have Xcode CLI installed. [Check installation instructions](https://middlemanapp.com/basics/install/)
 
+If you fail to install capybara-webkit when bundling after Middleman gem install check https://github.com/bundler/bundler/issues/1768
+
 In order to make a simple deploy to Github pages you need the [middleman-deploy gem found at](https://github.com/middleman-contrib/middleman-deploy)
 
 ### Building
